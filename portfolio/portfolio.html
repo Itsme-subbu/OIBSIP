@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <p class="name">Subbarao Bandaru</p>
+        <nav class="navbar">
+            <a  href="#home">Home</a> 
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+            <svg onclick="menubar()" class="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg onclick="closebar()" class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </nav>
+    </header>
+    <div class="dropdown">
+        <a  href="#home"    onclick="closed()">Home</a> 
+        <a  href="#about"   onclick="closed()">About</a>
+        <a  href="#skills"  onclick="closed()">Skills</a>
+        <a  href="#projects"onclick="closed()">Projects</a>
+        <a  href="#contact" onclick="closed()">Contact Me</a>
+    </div>
+    <section class="home" id="home">
+        <div class="home_content">
+            <h3>Hello,It's Me</h3>
+            <h1>Subbarao Bandaru</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I am a passionate software developer. I specialize in web development and enjoy building responsive,user-friendly websites and applications.</p>
+            <div class="social_icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/shivalucky3014/ "><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/subbarao-b-651a732b8/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="but">
+                <button id="resume">Download CV</button>
+            </div>    
+        </div>
+        <div class="ima">
+            <img src="gfrg.jpg" alt="logo">
+        </div>
+    </section>
+    <section class="about" id="about" >
+        <div class="about_content">
+            <h1>About Me</h1>
+            <h3>Frontend developer</h3>
+            <p>Highly motivated and dedicated 3<sup>rd</sup> student seeking a challenging position to apply my technical knowledge and skills in a professional work environment.  I have honed my skills in [ HTML, CSS, JavaScript, Python]. My expertise lies in developing user-friendly and efficient websites that meet the unique needs of each client.</p>
+            <button class="but">Read More</button>
+        </div>
+        <div class="img">
+            <img src="t.jpg" alt="">
+        </div>
+    </section>
+    <div class="myskills" id="skills">
+        <h1>My Skills</h1>
+    </div>
+    <section class="skills" >
+        <div class="skill_content">
+            <div class="bars">
+            <p><i id="html" class="fa-brands fa-html5"></i> html </p>
+                <span>85%</span>
+                <div class="bar"><div class="progress-html"></div></div>
+            </div>
+            <div class="bars">
+                <p><i id="css" class="fa-brands fa-css3-alt"></i> css </p>
+                <span>60%</span>
+                <div class="bar"><div class="progress-css"></div></div>
+            </div>
+            <div class="bars">
+                <p><i id="js" class="fa-brands fa-js"></i> javascript </p>
+                <span>65%</span>
+                <div class="bar"><div class="progress-js"></div></div>
+            </div>
+            <div class="bars">
+                <p><i id="python" class="fa-brands fa-python"></i> python </p>
+                <span>80%</span>
+                <div class="bar"><div class="progress-python"></div></div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+        <div class="project_content">
+            <div class="project_1">
+                <img src="weather.png" alt="">
+                <p>Weather App</p>
+                <a href="https://github.com/Itsme-subbu/my/tree/main/weather"><button id="but">Read More</button></a>
+            </div>
+            <div class="project_1">
+                <img src="landing.png" alt="">
+                <p>landing Page</p>
+                <a href="https://github.com/Itsme-subbu/OctaNet/tree/main/landing_page"><button id="but">Read More</button></a>
+            </div>
+            <div class="project_1">
+                <img src="yolo.png" alt="">
+                <p>Yolo Object Detection Model </p>
+                <a href="https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb"><button id="but">Read More</button></a>
+            </div>
+            <div class="project_1">
+                <img src="calculator.png" alt="">
+                <p>Calculator</p>
+                <a href="https://github.com/Itsme-subbu/codsoft/blob/main/calculator.py"><button id="but">Read More</button></a>
+            </div>
+            <div class="project_1">
+                <img src="rock.png" alt="">
+                <p>Rock paper Scissors game</p>
+                <a href="https://github.com/Itsme-subbu/codsoft/blob/main/rock.py"><button id="but">Read More</button></a>
+            </div>
+            <div class="project_1">
+                <img src="movie.png" alt="">
+                <p>movie Recommendation System</p>
+                <a href="https://github.com/Itsme-subbu/Bharat_Intern-ML/blob/main/movie_recommendation_system.ipynb"><button id="but">Read More</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <form action="#">
+            <div class="input">
+                <input type="text"id="" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input_box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="butto">
+                <button type="submit" >Send Message</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer_text">
+            <p>Copyright &copy; 2024 by @subbarao | All Rights Reserved.</p>
+        </div>
+        <div class="arrow">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
