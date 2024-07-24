@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    min-width: 821px;
+}
+
+.main .navbar{
+    width: 100vw;
+    
+    position: fixed;
+    height: 60px;
+    background-color: hsl(176, 83%, 72%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .navbar .logo{
+    width: 200px;
+    padding-left: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo p{
+    font-size: 30px;
+    font-weight:bold;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: hsl(172, 92%, 25%);
+}
+.main .services{
+    
+    width: 100%;
+    min-width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.services a{
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-bottom: 2px solid ;
+    border-bottom: none;
+    color: hsl(0, 2%, 10%);
+}
+a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: hsl(180, 16%, 94%);
+    left: 50%;
+    bottom: -1px;
+    transition: all .3s ease-in-out;
+}
+a:hover::after{
+    
+    width: 100%;
+    left: 0;
+    background-color: hsl(0, 22%, 95%);
+}
+a:hover{
+    color: rgb(241, 246, 241);
+    text-shadow: 0px 0px 10px hsl(180, 8%, 95%);;
+}
+.services input{
+    width: 190px;
+    height: 30px;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid hsl(0, 87%, 97%);
+    border-radius: 20px;
+    color: hsl(0, 3%, 8%);
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 10px white;
+}
+input::placeholder{
+    color: black;
+}
+input:focus{
+    outline: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    
+}
+input:focus::-webkit-input-placeholder{
+    outline: none;
+    visibility: hidden;
+}
+.services button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.services button:hover{
+    background-color: white;
+    box-shadow: 0px 0px 15px white;
+    border: none;
+    color: black;
+}
+
+.content img{
+    padding-top: 60px;
+    width: 100vw;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .heading{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 60px;
+    font-style: italic;
+    text-transform: capitalize;
+    color: rgb(14, 71, 71);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content .medic{
+    position: absolute;
+    top: 31%;
+    left: 21%;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: hsl(160, 80%, 22%);
+    font-weight: bold;
+}
+.content .text{
+    position: absolute;
+    top: 37%;
+    left: 20%;
+    line-height: 35px;
+    font-size: 20px;
+    font-style: oblique;
+    color: hsl(161, 80%, 32%);
+    font-weight: bolder;
+}
+.content button{
+    position: absolute;
+    bottom: 32%;
+    left: 30%;
+    font-size: 30px;
+    background-color: transparent;
+    color: hsl(161, 80%, 32%) ;
+    border: 2px solid hsl(161, 80%, 32%);
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-style: italic;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color:  hsl(161, 80%, 32%);
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px  hsl(161, 80%, 32%);
+    gap: 10px;
+}
+@media  (max-width:1000px){
+    .content .text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+
+    }
+}
+.media{
+    background-color:  hsl(176, 83%, 72%);
+    display: flex;
+    padding: 15px;
+    height: 60px;
+}
+.media p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.media  img{
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+}
